@@ -1,20 +1,23 @@
 // src/components/BlogCard.jsx
+import Image from "../atoms/Image";
+import Text from "../atoms/Text";
+
 function BlogCard({ post }) {
   return (
     <div className="card h-100 shadow-sm">
       {post.imagen && (
-        <img
+        <Image
           src={post.imagen}
-          className="card-img-top"
           alt={post.titulo}
+          className="card-img-top"
         />
       )}
       <div className="card-body">
         <h5 className="card-title">{post.titulo}</h5>
-        <h6 className="card-subtitle mb-2 text-muted">
+        <Text className="text-muted">
           {post.autor} - {post.fecha}
-        </h6>
-        <p className="card-text">{post.contenido}</p>
+        </Text>
+        <Text className="card-text">{post.contenido}</Text>
       </div>
     </div>
   );

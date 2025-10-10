@@ -1,9 +1,13 @@
 // src/pages/Register.jsx
 import { useState } from "react";
-import registerInicial from "../data/register";
 
 function Register() {
-  const [formData, setFormData] = useState(registerInicial);
+  const [formData, setFormData] = useState({
+    nombre: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
 
   const handleChange = (e) => {
     setFormData({
@@ -19,7 +23,7 @@ function Register() {
       return;
     }
     alert(`Usuario ${formData.nombre} registrado con éxito`);
-    setFormData(registerInicial); // reinicia al estado inicial
+    setFormData({ nombre: "", email: "", password: "", confirmPassword: "" });
   };
 
   return (
