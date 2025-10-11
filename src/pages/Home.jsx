@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container } from 'react-bootstrap';
 import Footer from "../components/organisms/Footer";
 
@@ -25,6 +26,7 @@ function Home() {
       {/* Contenido de bienvenida */}
       <Container className="my-5">
         <h2>¿Quienes somos?</h2>
+        <p>a</p>
         <p>
           🌱Plantita - Tu espacio para disfrutar y cuidar tus plantas.
              Encuentra productos frescos, tips y novedades en nuestro blog.
