@@ -17,10 +17,10 @@ function ProductCard({ product }) {
          title={product.name}
          price={product.price}
        />
-       <Button variant="primary" onClick={() => navigate(`/products/${product.id}`)}>
+     </Card.Body>
+      <Button variant="primary" onClick={() => navigate(`/products/${product.id}`)}>
          Ver detalles
        </Button>
-     </Card.Body>
    </Card>
  );
 }

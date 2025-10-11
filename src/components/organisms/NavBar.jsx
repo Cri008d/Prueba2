@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useCart } from "../organisms/CartContext";
-
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const { totalItems } = useCart();

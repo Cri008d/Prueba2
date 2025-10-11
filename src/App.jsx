@@ -8,10 +8,13 @@ import Contacto from './pages/Contacto';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Cart from "./pages/Cart";
+import { CartProvider } from "./components/organisms/CartContext";
+
 
 function App() {
  return (
    <>
+    <CartProvider>
      <NavBar />
      <Routes>
        <Route path="/" element={<Home />} />
@@ -23,6 +26,7 @@ function App() {
        <Route path="/register" element={<Register />} />
        <Route path="/cart" element={<Cart />} />
      </Routes>
+    </CartProvider>
    </>
  );
 }
