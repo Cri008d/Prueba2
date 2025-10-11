@@ -2,6 +2,8 @@
 import { useState } from "react";
 import contactoInicial from "../data/contacto";
 
+
+
 function Contacto() {
   const [formData, setFormData] = useState(contactoInicial);
 

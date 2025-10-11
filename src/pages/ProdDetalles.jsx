@@ -5,7 +5,8 @@ import products from '../data/Producto.js';
 import Image from '../components/atoms/Image.jsx';
 import Text from '../components/atoms/Text.jsx';
 import '../styles/ProdDetalle.css';
-
+import Button from '../components/atoms/Button.jsx'; 
+import Footer from "../components/organisms/Footer";
 
 function ProdDetalles() {
  const { id } = useParams();
@@ -29,14 +30,16 @@ function ProdDetalles() {
        <Card.Body>
          <Text variant="h2">{product.name}</Text>
          <Text variant="p">{product.description}</Text>
-         <Text variant="h4">${product.price}</Text>
-         <Button variant="success" onClick={() => addToCart(product)}>
+         <Text variant="h4">${product.price}</Text> 
+       </Card.Body>
+       <Button variant="success" onClick={() => addToCart(product)}>
           Agregar al carrito
         </Button>
-       </Card.Body>
      </Card>
+     <Footer/> 
    </Container>
- );
+    
+);
 }
 
 export default ProdDetalles;

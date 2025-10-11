@@ -21,8 +21,8 @@ function Cart() {
       ))}
       <h4 className="mt-3">Total: ${total}</h4>
       <Button variant="secondary" onClick={clearCart} className="mt-3">Vaciar carrito</Button>
-    </Container>
-  );
+    </Container>  
+);
 }
 
 export default Cart;

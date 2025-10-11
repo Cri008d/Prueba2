@@ -6,7 +6,7 @@ function NavBar() {
   const { totalItems } = useCart();
 
  return (
-   <Navbar bg="dark" variant="dark" expand="lg">
+   <Navbar bg="success" variant="dark" expand="lg" className="navbar-custom-text">
      <Container>
        <Navbar.Brand href="/">Plantita</Navbar.Brand>
        <Navbar.Toggle aria-controls="basic-navbar-nav" />

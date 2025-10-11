@@ -1,6 +1,7 @@
 // src/pages/Blog.jsx
 import posts from "../data/blog";
 import BlogCard from "../components/organisms/BlogCard";
+import Footer from "../components/organisms/Footer";
 
 function Blog() {
   return (
@@ -15,6 +16,7 @@ function Blog() {
           </div>
         ))}
       </div>
+    <Footer/>  
     </div>
   );
 }
