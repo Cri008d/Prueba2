@@ -1,6 +1,8 @@
 // src/components/BlogCard.jsx
 import Image from "../atoms/Image";
 import Text from "../atoms/Text";
+import React from 'react'
+
 
 function BlogCard({ post }) {
   return (

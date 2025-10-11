@@ -3,7 +3,7 @@ import Image from '../atoms/Image';
 import Button from '../atoms/Button';
 import CardBody from '../molecules/CardBody';
 import { useNavigate } from 'react-router-dom';
-
+import React from 'react';
 
 function ProductCard({ product }) {
  const navigate = useNavigate();
@@ -15,6 +15,7 @@ function ProductCard({ product }) {
      <Card.Body>
        <CardBody
          title={product.name}
+         description={product.description}
          price={product.price}
        />
      </Card.Body>

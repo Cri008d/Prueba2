@@ -7,6 +7,8 @@ import Text from '../components/atoms/Text.jsx';
 import '../styles/ProdDetalle.css';
 import Button from '../components/atoms/Button.jsx'; 
 import Footer from "../components/organisms/Footer";
+import React from 'react';
+
 
 function ProdDetalles() {
  const { id } = useParams();

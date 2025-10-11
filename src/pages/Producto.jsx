@@ -2,6 +2,7 @@ import { Container,Row } from 'react-bootstrap';
 import products from '../data/Producto';
 import ProductCard from '../components/organisms/ProductCard';
 import Footer from "../components/organisms/Footer";
+import React from 'react';
 
 function Producto() {
  return (
@@ -12,7 +13,7 @@ function Producto() {
          <ProductCard key={product.id} product={product} />
        ))}
      </Row>
-     <Footer/> 
+     <Footer/>
    </Container>
 
  );

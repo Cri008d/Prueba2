@@ -2,6 +2,7 @@
 import posts from "../data/blog";
 import BlogCard from "../components/organisms/BlogCard";
 import Footer from "../components/organisms/Footer";
+import React from 'react';
 
 function Blog() {
   return (
